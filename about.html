@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Computer Force</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 4px;
+            background-color: #ded7ff;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ded7ff;
+            padding: 10px;
+        }
+        nav a {
+            color: #020288;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        nav .search {
+            display: flex;
+        }
+        nav input[type="text"] {
+            padding: 5px;
+        }
+        button {
+            padding: 5px;
+            background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        button:hover {
+            box-shadow: 4px 4px 6px 0 rgba(255,255,255,0.5),
+                        -4px -4px 6px 0 rgba(116, 125, 136, 0.5), 
+                        inset -4px -4px 6px 0 rgba(255,255,255,0.2),
+                        inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+        }
+        .aside button {
+            border-radius: 5px;
+            margin-top: 2rem;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 10px;
+            padding: 20px;
+            flex: 1;
+        }
+        aside {
+            background-color: #fdf7ff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .aside {
+            color: #350c81;
+            text-align: center;
+            margin: 2rem auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e0e0e0;
+            color: #43166c;
+        }
+        h1, h2 {
+            color: #020288;
+        }
+        p {
+            color: #350c81;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .aside {
+            color: #350c81;
+            text-align: center;
+        }
+        .product {
+            padding-right: 20px;
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+        #logo {
+            width: 60px;
+            height: auto;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        form label {
+            grid-column: 1 / 2;
+        }
+        form input, form select {
+            grid-column: 2 / 3;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        form button[type="submit"], form button[type="reset"] {
+            grid-column: 1 / span 2;
+            margin-top: 10px;
+            width: fit-content;
+            justify-self: center;
+        }
+        input, select {
+            padding: 8px;
+            width: 95%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #4b0082;
+            transition: background-color 0.2s;
+        }
+        input:hover, select:hover {
+            background-color: #f3e8ff;
+        }
+        input:focus, select:focus {
+            outline: 1px solid #4b0082;
+            border-color: #4b0082;
+            background-color: #f3e8ff;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav .search {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: flex-start;
+            }
+            main {
+                grid-template-columns: 1fr;
+            }
+            aside {
+                margin-top: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                padding: 5px;
+            }
+            nav a {
+                margin-right: 5px;
+            }
+            nav button {
+                padding: 5px;
+                margin-left: 5px;
+            }
+            main {
+                padding: 10px;
+            }
+            .product img {
+                width: 80px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="/images/image.png" alt="Computer Force" id="logo"></img>
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="register.html">Register</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1>About Computer Force</h1>
+            <p>Computer Force is a brand-new start-up company designed to provide the first-class service to its customers. Based in Parramatta in Sydney, Computer Force provides top-class computing products at bargain prices, for sale throughout Australia.</p>
+            <p>Our goals are:</p>
+            <ul>
+                <li>To become Australia’s most well-known and respected hardware and software provider</li>
+                <li>To create a service-based organisation whose goal is to exceed customer's expectations</li>
+                <li>To provide a smooth, efficient, and transparent sales process</li>
+            </ul>
+            <address>
+                Address: 100 Main Road, Parramatta, NSW 20150<br>
+                Email: <a href="mailto:info@computerforce.com.au">info@computerforce.com.au</a><br>
+                Phone: 02 4444 5555
+            </address>
+        </section>
+        <aside>
+            <h2 class="aside">Purchases</h2>
+            <table class="aside">
+                <tr>
+                    <td>0 items.</td>
+                    <td>Cart sub-total: $0.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Go to Checkout</button></td>
+                </tr>
+            </table>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Denis Sinisterra</p>
+    </footer>
+</body>
+</html>
